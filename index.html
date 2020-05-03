@@ -1,24 +1,199 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 4</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <title>Hello!</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+  <meta name="description" content="news aggregator and blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>
-	</body>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="images/hello.png" alt="logo" width="50" height="20">
+      </a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#hm">
+              Discover
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ai">Watch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#water">Read</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/starwar.jpg" class="img-fluid" alt="Responsive image">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Polar bears have become the face of climate change</h1>
+              <p>Polar bears are getting thinner and having fewer cubs. Melting sea ice is to blame.</p>
+              <p>by Olivia Mann
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore Gallery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/group.jpg" class="img-fluid" alt="Responsive image">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Guess what Abbey Road and Star Wars have in common...</h1>
+              <p>Tune into some out-of-this-world bands from a galaxy far, far away...</p>
+              <p>by Zoe Svoda</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore gallery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/st3.jpg" class="img-fluid" alt="Responsive image">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>Our lives after the coronavirus pandemic</h1>
+              <p>Large-scale social behavioral changes – only some of which we can begin to predict – will follow the global catastrophe.</p>
+              <p>by Anna Ling</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore Gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="images/anna.jpg" class="rounded-circle" alt="circle" width="140" height="140">
+          <h2>Anna Ling</h2>
+          <p>"Right now, it feels impossible to predict what the world will look like next week, let alone next year. Yet behavioral science and the broad sweep of history suggest that COVID-19 will transform our daily lives in the long run. Will see what are new lives will be".</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Read Story &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img src="images/zoe.jpg" class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+          <h2>Zoe Svoda</h2>
+          <p>"In a galaxy where the Ewoks' Yub Nub song became the unlikely anthem for the end of imperial oppression, you'd be forgiven for thinking there were no intergalactic music-makers who can get your feet, claws, tentacles [delete as appropriate] tapping".</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Read Story &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img src="images/olivia.jpg" class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+          <h2>Olivia Mann</h2>
+          <p>"Polar bears rely on sea ice for nearly every aspect of their survival: It's where they hunt seals, travel, make dens and mate. So the earlier in the season the ice begins to melt, the less time they have to eat and procreate. The findings were outlined in a new study".</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Read Story &raquo;</a></p>
+        </div>
+        <div class="col-lg-3">
+          <img src="images/philippa.jpg" class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+          <h2>Pippa Neville</h2>
+          <p>"We waited for hours for the bears to get up until I realized that the Bears were never going to get up. I walked up to the bears, and they were both dead. They had starved to death. They were young, three year-old bears, it was just a gut-wrenching moment".</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Watch Gallery &raquo;</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Discover the long hidden misteries of the Himalayas that will make you question logic.<span class="text-muted"> And blow your mind!</span></h2>
+          <p class="lead">The mighty Himalayas and the charm they cast. One voyage to the mountains and you will not stay the same, always waiting for another trip back to its mighty folds. These mountains guard places so unimaginable that they sound like fantasies.</p>
+        </div>
+        <div class="col-md-5">
+          <img id="hm" src="images/hm.jpg" width="450" height="450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Today nearly 25% of the World's population faces a dramatic water crisis.  <span class="text-muted"> We can't longer ignore it!</span></h2>
+          <p class="lead">Within the past hundred years, water use has been growing at more than twice the rate of the human population. As water supplies continue to shrink, some parts of the world are facing a looming crisis.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img id="water" src="images/water.jpg" width="450" height="450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Learn more about the six most dangerous risks of artificial inteligence. <span class="text-muted">Look into AI's dark side!</span></h2>
+          <p class="lead">Tesla and SpaceX founder Elon Musk issued a friendly warning: “Mark my words,” he said, billionaire casual in a furry-collared bomber jacket and days’ old scruff, “AI is far more dangerous than nukes.”</p>
+        </div>
+        <div class="col-md-5">
+          <img id="ai" src="images/ai.jpg" width="450" height="450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2017-2019 Hello, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+</body>
 
 </html>
